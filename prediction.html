@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diabetes Prediction</title>
+</head>
+
+<body>
+    <section class="prediction-header">
+        <nav>
+            <h1>Sugar Sense</h1>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="prediction-form">
+            <h1>Predict Your Diabetes : </h1>
+
+            <form action="/">
+                <div>
+                    <label for="pregnencies">Number of Pregnencies</label>
+                    <input type="text" id="pregnencies">
+                </div>
+                <div>
+                    <label for="glucose">Glucose Level</label>
+                    <input type="text" id="glucose">
+                </div>
+                <div>
+                    <label for="bloodPressure">Blood Pressure Value</label>
+                    <input type="text" id="bloodPressure">
+                </div>
+                <div>
+                    <label for="skinThickness">Skin Thickness Value</label>
+                    <input type="text" id="skinThickness">
+                </div>
+                <div>
+                    <label for="insulin">Insulin Level</label>
+                    <input type="text" id="insulin">
+                </div>
+                <div>
+                    <label for="BMI">BMI value</label>
+                    <input type="text" id="BMI">
+                </div>
+                <div>
+                    <label for="diabetesPedigree">Diabetes Pedigree Function value</label>
+                    <input type="text" id="diabetesPedigree">
+                </div>
+                <div>
+                    <label for="age">Age of the person</label>
+                    <input type="text" id="age">
+                </div>
+                
+                <button class="btn">Submit</button>
+
+                <div>
+                    <input type="text" id="diabetesResult" readonly>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <script>
+        const form = document.querySelector("form");
+        const diabetesResult = document.querySelector("#diabetesResult");
+
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+        })
+
+        diabetesResult.value = "Your Diabetes Result is : ";
+    </script>
+</body>
+
+</html>
