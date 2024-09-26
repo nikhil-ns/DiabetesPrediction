@@ -89,6 +89,35 @@ nav ul a{
     padding: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 0.4em;
+    }
+    header{
+        width: 100dvw;
+        min-height: 100dvh;
+    }
+    nav{
+        max-width: 100dvw;
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0;
+        padding: 1em;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.5em;
+        gap: 0;
+    }
+    .content h2{
+        font-size: 2.8rem;
+    }
+  }
+
 /* Prediction page  */
 
 .prediction-header{
